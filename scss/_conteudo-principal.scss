@@ -33,9 +33,9 @@ i{font-size: 30px; color: $cor-neura-media; margin: 20px 0; cursor: pointer;}
 
     .box{
         
-        background-color: #fff; border-radius: 5px; padding: 20px;
+        background-color: rgb(255, 255, 255); border-radius: 5px; padding: 20px;
 
-        img{border-radius: 5px; max-width: 160px; display: block; margin: 0 auto; }
+        img{border-radius: 6px; max-width: 160px; display: block; margin: 0 auto; }
 
         .box-title{width: 300px;  background: $cor-primaria $cor-primaria-gradiente; display: block; text-align: center; padding: 10px 0; @include tipo-1(18); font-weight:bold; margin: 10px 0; color: $cor-neutra-clara;}
 
