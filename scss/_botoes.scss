@@ -1,0 +1,4 @@
+.btn{
+    width: 100%; background-color: $cor-secundaria-botoes; display: block; text-align: center; padding: 10px 0; font-weight: bold; text-decoration: underline; color: $cor-neutra-clara; font-size: 18px; border-radius: 5px;
+    &:hover{background-color: $cor-secundaria-botoes-hover;color: #fff}
+}

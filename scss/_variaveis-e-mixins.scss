@@ -1,0 +1,65 @@
+// cores
+$cor-primaria: rgb(0,108,160);
+$cor-primaria-gradiente: linear-gradient(21deg, rgba(0,108,160,1) 0%, rgba(30,31,123,1) 100%);
+$cor-secundaria: #021A48;
+$cor-secundaria-transparente: rgba(2, 26, 72, 0.26);
+$cor-secundaria-botoes: #F28705;
+$cor-secundaria-botoes-hover: #ff8e05;
+$cor-secundaria-divisores: #F6BC01;
+$cor-neutra-clara:rgb(240, 240, 240);
+$cor-neura-media:rgb(175, 175, 175);
+$cor-neutra-escura: #222;
+
+
+// tamanho tipografia
+@mixin tipo-1($tamanho){
+    @if $tamanho == 14{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 100;
+    }
+    @else if $tamanho == 16{
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 100;
+    }
+    @else if $tamanho == 18{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    @else if $tamanho == 25{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    @else if $tamanho == 35{
+        font-size: 35px;
+    }
+}
+
+
+// responsividade
+@mixin d ($dispositivo){
+
+    // desktop
+    @if $dispositivo == dk {
+        
+        @media only screen and  ( max-width: 1254px) {
+            @content;
+        }
+    } 
+    
+    // tablet
+    @else if $dispositivo == t{
+        @media only screen and (max-width:840px)  {
+            @content;
+        }
+    }
+
+    
+     // mobile
+     @else if $dispositivo == m{
+        @media only screen and (max-width:510px)  {
+            @content;
+        }
+    }
+}
